@@ -12,6 +12,23 @@
 		425B9968274086000008FD9A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 425B9967274086000008FD9A /* Experience.rcproject */; };
 		425B996A274086010008FD9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425B9969274086010008FD9A /* Assets.xcassets */; };
 		425B996D274086010008FD9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 425B996C274086010008FD9A /* Preview Assets.xcassets */; };
+		425B997B2740873D0008FD9A /* CustomARView+Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99762740873D0008FD9A /* CustomARView+Persistence.swift */; };
+		425B997C2740873D0008FD9A /* CustomARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99772740873D0008FD9A /* CustomARView.swift */; };
+		425B997D2740873D0008FD9A /* CustomARView+Gesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99782740873D0008FD9A /* CustomARView+Gesture.swift */; };
+		425B997E2740873D0008FD9A /* CustomARView+Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99792740873D0008FD9A /* CustomARView+Session.swift */; };
+		425B997F2740873D0008FD9A /* CustomARView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B997A2740873D0008FD9A /* CustomARView+Render.swift */; };
+		425B99852740874D0008FD9A /* SaveLoadState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99802740874C0008FD9A /* SaveLoadState.swift */; };
+		425B99862740874D0008FD9A /* AssetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99812740874C0008FD9A /* AssetModel.swift */; };
+		425B99872740874D0008FD9A /* ARState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99822740874C0008FD9A /* ARState.swift */; };
+		425B99882740874D0008FD9A /* ButtonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99832740874C0008FD9A /* ButtonInfo.swift */; };
+		425B99892740874D0008FD9A /* ButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99842740874D0008FD9A /* ButtonState.swift */; };
+		425B99912740875B0008FD9A /* MainUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B998A2740875A0008FD9A /* MainUI.swift */; };
+		425B99922740875B0008FD9A /* SaveLoadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B998B2740875A0008FD9A /* SaveLoadButton.swift */; };
+		425B99932740875B0008FD9A /* SnapshotThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B998C2740875B0008FD9A /* SnapshotThumbnail.swift */; };
+		425B99942740875B0008FD9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B998D2740875B0008FD9A /* ContentView.swift */; };
+		425B99952740875B0008FD9A /* SessionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B998E2740875B0008FD9A /* SessionInfo.swift */; };
+		425B99962740875B0008FD9A /* MappingStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B998F2740875B0008FD9A /* MappingStatusView.swift */; };
+		425B99972740875B0008FD9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B99902740875B0008FD9A /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +38,23 @@
 		425B9967274086000008FD9A /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		425B9969274086010008FD9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		425B996C274086010008FD9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		425B99762740873D0008FD9A /* CustomARView+Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomARView+Persistence.swift"; sourceTree = "<group>"; };
+		425B99772740873D0008FD9A /* CustomARView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomARView.swift; sourceTree = "<group>"; };
+		425B99782740873D0008FD9A /* CustomARView+Gesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomARView+Gesture.swift"; sourceTree = "<group>"; };
+		425B99792740873D0008FD9A /* CustomARView+Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomARView+Session.swift"; sourceTree = "<group>"; };
+		425B997A2740873D0008FD9A /* CustomARView+Render.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomARView+Render.swift"; sourceTree = "<group>"; };
+		425B99802740874C0008FD9A /* SaveLoadState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveLoadState.swift; sourceTree = "<group>"; };
+		425B99812740874C0008FD9A /* AssetModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetModel.swift; sourceTree = "<group>"; };
+		425B99822740874C0008FD9A /* ARState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARState.swift; sourceTree = "<group>"; };
+		425B99832740874C0008FD9A /* ButtonInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonInfo.swift; sourceTree = "<group>"; };
+		425B99842740874D0008FD9A /* ButtonState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonState.swift; sourceTree = "<group>"; };
+		425B998A2740875A0008FD9A /* MainUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUI.swift; sourceTree = "<group>"; };
+		425B998B2740875A0008FD9A /* SaveLoadButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveLoadButton.swift; sourceTree = "<group>"; };
+		425B998C2740875B0008FD9A /* SnapshotThumbnail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotThumbnail.swift; sourceTree = "<group>"; };
+		425B998D2740875B0008FD9A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		425B998E2740875B0008FD9A /* SessionInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionInfo.swift; sourceTree = "<group>"; };
+		425B998F2740875B0008FD9A /* MappingStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MappingStatusView.swift; sourceTree = "<group>"; };
+		425B99902740875B0008FD9A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +87,11 @@
 		425B9962274086000008FD9A /* UTD-Class-Finder */ = {
 			isa = PBXGroup;
 			children = (
+				425B9975274087090008FD9A /* Custom ARViews  */,
 				425B9963274086000008FD9A /* AppDelegate.swift */,
 				425B9965274086000008FD9A /* ContentView.swift */,
+				425B9974274086FF0008FD9A /* Models */,
+				425B9973274086F90008FD9A /* Views */,
 				425B9967274086000008FD9A /* Experience.rcproject */,
 				425B9969274086010008FD9A /* Assets.xcassets */,
 				425B996B274086010008FD9A /* Preview Content */,
@@ -68,6 +105,44 @@
 				425B996C274086010008FD9A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		425B9973274086F90008FD9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				425B99902740875B0008FD9A /* AppDelegate.swift */,
+				425B998D2740875B0008FD9A /* ContentView.swift */,
+				425B998A2740875A0008FD9A /* MainUI.swift */,
+				425B998F2740875B0008FD9A /* MappingStatusView.swift */,
+				425B998B2740875A0008FD9A /* SaveLoadButton.swift */,
+				425B998E2740875B0008FD9A /* SessionInfo.swift */,
+				425B998C2740875B0008FD9A /* SnapshotThumbnail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		425B9974274086FF0008FD9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				425B99822740874C0008FD9A /* ARState.swift */,
+				425B99812740874C0008FD9A /* AssetModel.swift */,
+				425B99832740874C0008FD9A /* ButtonInfo.swift */,
+				425B99842740874D0008FD9A /* ButtonState.swift */,
+				425B99802740874C0008FD9A /* SaveLoadState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		425B9975274087090008FD9A /* Custom ARViews  */ = {
+			isa = PBXGroup;
+			children = (
+				425B99772740873D0008FD9A /* CustomARView.swift */,
+				425B99782740873D0008FD9A /* CustomARView+Gesture.swift */,
+				425B99762740873D0008FD9A /* CustomARView+Persistence.swift */,
+				425B997A2740873D0008FD9A /* CustomARView+Render.swift */,
+				425B99792740873D0008FD9A /* CustomARView+Session.swift */,
+			);
+			path = "Custom ARViews ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +215,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425B997F2740873D0008FD9A /* CustomARView+Render.swift in Sources */,
+				425B997D2740873D0008FD9A /* CustomARView+Gesture.swift in Sources */,
+				425B99952740875B0008FD9A /* SessionInfo.swift in Sources */,
+				425B997C2740873D0008FD9A /* CustomARView.swift in Sources */,
+				425B99892740874D0008FD9A /* ButtonState.swift in Sources */,
+				425B99912740875B0008FD9A /* MainUI.swift in Sources */,
 				425B9966274086000008FD9A /* ContentView.swift in Sources */,
+				425B99932740875B0008FD9A /* SnapshotThumbnail.swift in Sources */,
+				425B99972740875B0008FD9A /* AppDelegate.swift in Sources */,
+				425B99942740875B0008FD9A /* ContentView.swift in Sources */,
 				425B9964274086000008FD9A /* AppDelegate.swift in Sources */,
+				425B99922740875B0008FD9A /* SaveLoadButton.swift in Sources */,
+				425B99852740874D0008FD9A /* SaveLoadState.swift in Sources */,
+				425B997B2740873D0008FD9A /* CustomARView+Persistence.swift in Sources */,
+				425B99962740875B0008FD9A /* MappingStatusView.swift in Sources */,
+				425B99882740874D0008FD9A /* ButtonInfo.swift in Sources */,
 				425B9968274086000008FD9A /* Experience.rcproject in Sources */,
+				425B99872740874D0008FD9A /* ARState.swift in Sources */,
+				425B99862740874D0008FD9A /* AssetModel.swift in Sources */,
+				425B997E2740873D0008FD9A /* CustomARView+Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +365,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UTD-Class-Finder/Preview Content\"";
-				DEVELOPMENT_TEAM = VX2AJLRG3N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -288,7 +380,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.khang.nguyen.trd.UTD-Class-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -304,7 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UTD-Class-Finder/Preview Content\"";
-				DEVELOPMENT_TEAM = VX2AJLRG3N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -319,7 +410,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail.khang.nguyen.trd.UTD-Class-Finder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
