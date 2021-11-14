@@ -44,6 +44,7 @@ extension CustomARView {
         // Add ARAnchor into ARView.session, which can be persisted in WorldMap
         self.session.add(anchor: virtualObjectAnchor!)
         
+        
     }
 
 }

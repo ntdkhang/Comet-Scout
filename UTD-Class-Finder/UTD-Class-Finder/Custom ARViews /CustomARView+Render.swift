@@ -22,6 +22,7 @@ extension CustomARView {
         
         if let modelEntity = virtualObject.modelEntity {
             print ("DEBUG: loadKeyIndex = \(self.loadKeyIndex)")
+            print("DEBUG: numExperiences in ARView: \(self.numExperiences)")
             
             if (self.doneSaving && self.loadKeyIndex < self.numExperiences){
                 self.loadExperience()

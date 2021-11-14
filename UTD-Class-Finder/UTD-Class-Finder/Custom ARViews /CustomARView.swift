@@ -29,6 +29,12 @@ class CustomARView: ARView{
     // MARK: - Init and setup
     
     init(frame frameRect: CGRect, saveLoadState: SaveLoadState, arState: ARState) {
+        self.numExperiences = UserDefaults.standard.integer(forKey: "numExperiences")
+        print("DEBUG: numExperiences = \(self.numExperiences)")
+//            self.numExperiences = numExp
+//        } else {
+//            self.numExperiences = -1
+//        }
         self.saveLoadState = saveLoadState
         self.arState = arState
         super.init(frame: frameRect)
@@ -52,7 +58,8 @@ class CustomARView: ARView{
     // MARK: - AR content
     var virtualObjectAnchor: ARAnchor?
     let virtualObjectAnchorName = "virtualObject"
-    var virtualObject = AssetModel(name: "teapot.usdz")
+//    var virtualObject = AssetModel(name: "teapot.usdz")
+    var virtualObject = AssetModel(name: "arrow.usdz")
     
     
     // MARK: - AR session management

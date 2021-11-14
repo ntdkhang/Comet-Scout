@@ -79,13 +79,22 @@ struct ARViewContainer: UIViewRepresentable {
         if arState.resetButton.isPressed {
             uiView.resetTracking()
             uiView.doneSaving = true
-            uiView.numExperiences = uiView.saveKeyIndex
+            
+            if (uiView.numExperiences > 0) {
+                UserDefaults.standard.set(uiView.numExperiences, forKey: "numExperiences")
+            } else {
+                uiView.numExperiences = uiView.saveKeyIndex
+            }
+            print("DEBUG: numExperiences after button pressed: \(uiView.numExperiences)")
+            print("DEBUG: numExperiences in userDefaults: \(UserDefaults.standard.integer(forKey: "numExperiences"))")
             
             DispatchQueue.main.async {
                 self.arState.resetButton.isPressed = false
             }
         }
     }
+    
+    
 
 }
 
