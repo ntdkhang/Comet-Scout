@@ -22,6 +22,7 @@ struct MainUI: View {
                         Spacer()
                         
                         Button("Forward", action: {arState.arrowRotation = .forward}).buttonStyle(.bordered)
+                        Button("Backward", action: {arState.arrowRotation = .backward}).buttonStyle(.bordered)
                         Button("Left", action: {arState.arrowRotation = .left}).buttonStyle(.bordered)
                         Button("Right", action: {arState.arrowRotation = .right}).buttonStyle(.bordered)
                         Button("Up", action: {arState.arrowRotation = .up}).buttonStyle(.bordered)

@@ -45,8 +45,8 @@ extension CustomARView {
         let configuration = self.defaultConfiguration // this app's standard world tracking settings
         configuration.initialWorldMap = worldMap
         
-//        self.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
-        self.session.run(configuration, options: [])
+        self.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+//        self.session.run(configuration, options: [])
 
         isRelocalizingMap = true
         virtualObjectAnchor = nil
@@ -78,6 +78,7 @@ extension CustomARView {
                 fatalError("Can't save map: \(error.localizedDescription)")
             }
         }
+        self.session.run(self.defaultConfiguration, options: [.resetTracking, .removeExistingAnchors])
     }
     
 }

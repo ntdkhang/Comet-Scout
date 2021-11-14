@@ -22,5 +22,5 @@ final class ARState: ObservableObject {
 }
 
 enum ArrowRotation: CaseIterable {
-    case forward, left, right, up 
+    case forward, backward, left, right, up 
 }
