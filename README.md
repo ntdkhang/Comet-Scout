@@ -1,4 +1,4 @@
-# UTD-Class-Finder
+# Comet Scout
 
 ## Inspiration
 The first week at UTD was a terrible experience for us. We were late for most of our classes as we couldn't remember where the rooms are. Using the current UTD map didn't help much, as they do not provide clear guidance inside buildings. That is why we wanted to create an app that helps students find their classrooms. 
