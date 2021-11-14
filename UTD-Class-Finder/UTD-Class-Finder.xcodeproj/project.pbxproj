@@ -34,7 +34,37 @@
 		428CE4BB274148F10042EAE9 /* arrow_3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 428CE4BA274148F10042EAE9 /* arrow_3.usdz */; };
 		428CE4BF2741550D0042EAE9 /* Target.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 428CE4BE2741550D0042EAE9 /* Target.rcproject */; };
 		428CE4C327415A2E0042EAE9 /* target.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 428CE4C227415A2E0042EAE9 /* target.usdz */; };
+
+		891837882741607B0060C8C0 /* ClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891837872741607B0060C8C0 /* ClipApp.swift */; };
+		8918378A2741607B0060C8C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891837892741607B0060C8C0 /* ContentView.swift */; };
+		8918378C2741607B0060C8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8918378B2741607B0060C8C0 /* Assets.xcassets */; };
+		8918378F2741607B0060C8C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8918378E2741607B0060C8C0 /* Preview Assets.xcassets */; };
+		891837942741607B0060C8C0 /* Clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = 891837852741607B0060C8C0 /* Clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		891837922741607B0060C8C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 425B9958274086000008FD9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 891837842741607B0060C8C0;
+			remoteInfo = Clip;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		891837982741607B0060C8C0 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				891837942741607B0060C8C0 /* Clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		425B9960274086000008FD9A /* UTD-Class-Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UTD-Class-Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,10 +95,24 @@
 		428CE4BA274148F10042EAE9 /* arrow_3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = arrow_3.usdz; sourceTree = "<group>"; };
 		428CE4BE2741550D0042EAE9 /* Target.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Target.rcproject; sourceTree = "<group>"; };
 		428CE4C227415A2E0042EAE9 /* target.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = target.usdz; sourceTree = "<group>"; };
+		891837852741607B0060C8C0 /* Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		891837872741607B0060C8C0 /* ClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipApp.swift; sourceTree = "<group>"; };
+		891837892741607B0060C8C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8918378B2741607B0060C8C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8918378E2741607B0060C8C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		891837902741607B0060C8C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		891837912741607B0060C8C0 /* Clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clip.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		425B995D274086000008FD9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891837822741607B0060C8C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -82,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				425B9962274086000008FD9A /* UTD-Class-Finder */,
+				891837862741607B0060C8C0 /* Clip */,
 				425B9961274086000008FD9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				425B9960274086000008FD9A /* UTD-Class-Finder.app */,
+				891837852741607B0060C8C0 /* Clip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +206,27 @@
 			path = "Custom ARViews ";
 			sourceTree = "<group>";
 		};
+		891837862741607B0060C8C0 /* Clip */ = {
+			isa = PBXGroup;
+			children = (
+				891837872741607B0060C8C0 /* ClipApp.swift */,
+				891837892741607B0060C8C0 /* ContentView.swift */,
+				8918378B2741607B0060C8C0 /* Assets.xcassets */,
+				891837902741607B0060C8C0 /* Info.plist */,
+				891837912741607B0060C8C0 /* Clip.entitlements */,
+				8918378D2741607B0060C8C0 /* Preview Content */,
+			);
+			path = Clip;
+			sourceTree = "<group>";
+		};
+		8918378D2741607B0060C8C0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8918378E2741607B0060C8C0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,15 +237,34 @@
 				425B995C274086000008FD9A /* Sources */,
 				425B995D274086000008FD9A /* Frameworks */,
 				425B995E274086000008FD9A /* Resources */,
+				891837982741607B0060C8C0 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				891837932741607B0060C8C0 /* PBXTargetDependency */,
 			);
 			name = "UTD-Class-Finder";
 			productName = "UTD-Class-Finder";
 			productReference = 425B9960274086000008FD9A /* UTD-Class-Finder.app */;
 			productType = "com.apple.product-type.application";
+		};
+		891837842741607B0060C8C0 /* Clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 891837952741607B0060C8C0 /* Build configuration list for PBXNativeTarget "Clip" */;
+			buildPhases = (
+				891837812741607B0060C8C0 /* Sources */,
+				891837822741607B0060C8C0 /* Frameworks */,
+				891837832741607B0060C8C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clip;
+			productName = Clip;
+			productReference = 891837852741607B0060C8C0 /* Clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
 		};
 /* End PBXNativeTarget section */
 
@@ -191,6 +277,9 @@
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
 					425B995F274086000008FD9A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					891837842741607B0060C8C0 = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -209,6 +298,7 @@
 			projectRoot = "";
 			targets = (
 				425B995F274086000008FD9A /* UTD-Class-Finder */,
+				891837842741607B0060C8C0 /* Clip */,
 			);
 		};
 /* End PBXProject section */
@@ -224,6 +314,15 @@
 				428CE4B727410E750042EAE9 /* arrow.usdz in Resources */,
 				428CE4C327415A2E0042EAE9 /* target.usdz in Resources */,
 				425B996A274086010008FD9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		891837832741607B0060C8C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8918378F2741607B0060C8C0 /* Preview Assets.xcassets in Resources */,
+				8918378C2741607B0060C8C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +343,6 @@
 				425B99932740875B0008FD9A /* SnapshotThumbnail.swift in Sources */,
 				425B999C274088D10008FD9A /* Extensions.swift in Sources */,
 				425B9999274087B60008FD9A /* MenuView.swift in Sources */,
-				428CE4BF2741550D0042EAE9 /* Target.rcproject in Sources */,
 				425B99972740875B0008FD9A /* AppDelegate.swift in Sources */,
 				425B99942740875B0008FD9A /* ContentView.swift in Sources */,
 				425B99922740875B0008FD9A /* SaveLoadButton.swift in Sources */,
@@ -258,7 +356,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		891837812741607B0060C8C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8918378A2741607B0060C8C0 /* ContentView.swift in Sources */,
+				891837882741607B0060C8C0 /* ClipApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		891837932741607B0060C8C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 891837842741607B0060C8C0 /* Clip */;
+			targetProxy = 891837922741607B0060C8C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		425B996E274086010008FD9A /* Debug */ = {
@@ -380,12 +495,13 @@
 		425B9971274086010008FD9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UTD-Class-Finder/Preview Content\"";
-				DEVELOPMENT_TEAM = VX2AJLRG3N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -400,7 +516,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.khang.nguyen.trd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShoaibH;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -411,12 +527,13 @@
 		425B9972274086010008FD9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"UTD-Class-Finder/Preview Content\"";
-				DEVELOPMENT_TEAM = VX2AJLRG3N;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
@@ -431,7 +548,71 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.khang.nguyen.trd;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShoaibH;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		891837962741607B0060C8C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Clip/Clip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Clip/Preview Content\"";
+				DEVELOPMENT_TEAM = 6F3A58SWMP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "UTD-Class-Finder";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShoaibH.Clip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		891837972741607B0060C8C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Clip/Clip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Clip/Preview Content\"";
+				DEVELOPMENT_TEAM = 6F3A58SWMP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Clip/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "UTD-Class-Finder";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShoaibH.Clip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -456,6 +637,15 @@
 			buildConfigurations = (
 				425B9971274086010008FD9A /* Debug */,
 				425B9972274086010008FD9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		891837952741607B0060C8C0 /* Build configuration list for PBXNativeTarget "Clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				891837962741607B0060C8C0 /* Debug */,
+				891837972741607B0060C8C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

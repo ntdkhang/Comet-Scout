@@ -9,31 +9,9 @@ import SwiftUI
 
 struct MenuView: View {
     var body: some View {
-//        List {
-            
-//        }
-        NavigationView {
-            VStack {
-                NavigationLink(destination: {}, label: {Text("Student View")})
-                NavigationLink(destination: {}, label: {Text("Developer View")})
-            }
-        }
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
-
-//struct StudentView: View {
-//    var body: some View {
-//
-//    }
-//}
-//
-//
-//struct DeveloperView: View {
-//    var body: some View {
-//
-//
-//    }
-//}
 
 struct MenuView_Previews: PreviewProvider {
     static var previews: some View {
