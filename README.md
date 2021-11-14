@@ -1,3 +1,5 @@
+![alt text](https://github.com/ntdkhang/Comet-Scout/tree/main/UTD-Class-Finder/UTD-Class-Finder/utdLogo.jpg?raw=true)
+
 # Comet Scout
 
 ## Inspiration
