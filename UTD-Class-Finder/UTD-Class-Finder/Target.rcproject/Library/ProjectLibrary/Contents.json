@@ -1,0 +1,27 @@
+[
+  {
+    "libraryIdentifier" : "a488fc099211c5e933ac9fd9532feb96",
+    "format" : "model",
+    "displayName" : "arrow.usdz"
+  },
+  {
+    "libraryIdentifier" : "2322b23deb099585cc90999e95a029c7",
+    "format" : "model",
+    "displayName" : "arrow.usdz"
+  },
+  {
+    "libraryIdentifier" : "56d70365b218c863641ae9998e42aeee",
+    "format" : "model",
+    "displayName" : "arrow.usdz"
+  },
+  {
+    "libraryIdentifier" : "4f797eb21adb3646e57fda6271a88c2c",
+    "format" : "model",
+    "displayName" : "teapot.usdz"
+  },
+  {
+    "libraryIdentifier" : "ef3185371bcdc1637e218d265e508c95",
+    "format" : "model",
+    "displayName" : "target_HERO.usdz"
+  }
+]

@@ -59,8 +59,8 @@ class CustomARView: ARView{
     var virtualObjectAnchor: ARAnchor?
     let virtualObjectAnchorName = "virtualObject"
 //    var virtualObject = AssetModel(name: "teapot.usdz")
-    var virtualObject = AssetModel(name: "arrow.usdz")
-    
+    var virtualObject = AssetModel(name: "arrow_3.usdz")
+    var targetObject = AssetModel(name: "target.usdz")
     
     // MARK: - AR session management
     var isRelocalizingMap = false

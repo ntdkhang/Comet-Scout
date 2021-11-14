@@ -18,8 +18,9 @@ final class ARState: ObservableObject {
     @Published var saveIndex = 0
     @Published var mode = 0 //      1 = developer,     0 = student
     @Published var arrowRotation: ArrowRotation = .forward
+    @Published var targetPlacement = false
 }
 
-enum ArrowRotation: Int {
-    case forward = 1, left = 2, right = 3, up = 4
+enum ArrowRotation: CaseIterable {
+    case forward, left, right, up 
 }

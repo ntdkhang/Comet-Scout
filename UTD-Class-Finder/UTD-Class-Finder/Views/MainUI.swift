@@ -15,6 +15,21 @@ struct MainUI: View {
         VStack {
             
             ZStack(alignment: .top) {
+                
+                HStack {
+                    Spacer()
+                    VStack {
+                        Spacer()
+                        
+                        Button("Forward", action: {arState.arrowRotation = .forward}).buttonStyle(.bordered)
+                        Button("Left", action: {arState.arrowRotation = .left}).buttonStyle(.bordered)
+                        Button("Right", action: {arState.arrowRotation = .right}).buttonStyle(.bordered)
+                        Button("Up", action: {arState.arrowRotation = .up}).buttonStyle(.bordered)
+                        Button("TARGET", action: {arState.targetPlacement = true}).buttonStyle(.bordered)
+                        Spacer()
+                    }
+                }
+                
                 HStack {
                     if !arState.isThumbnailHidden {
                         if let image = arState.thumbnailImage {
@@ -67,6 +82,14 @@ struct MainUI: View {
             SaveLoadButton()
         }
     }
+    
+//    func ToggleRotation(to desiredRotation: ArrowRotation) {
+//        for rotation in ArrowRotation.allCases {
+//            if rotation != desiredRotation {
+//                arState.
+//            }
+//        }
+//    }
 }
 
 struct MainUI_Previews: PreviewProvider {

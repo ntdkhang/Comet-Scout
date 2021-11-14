@@ -15,17 +15,20 @@ extension CustomARView {
     func rotationMultiplier() -> simd_quatf {
         switch arState.arrowRotation {
         case .forward:
-            return simd_quatf(angle:.pi, axis: SIMD3<Float>(1, 0, 0))
-        default:
-            return simd_quatf(angle:.pi, axis: SIMD3<Float>(1, 0, 0))
+            return simd_quatf(angle: .ulpOfOne, axis: SIMD3<Float>(1, 0, 0))
+        case .left:
+            return simd_quatf(angle: .pi / 2, axis: SIMD3<Float>(0, 1, 0))
+        case .right:
+            return simd_quatf(angle: .pi * (3 / 2), axis: SIMD3<Float>(0, 1, 0))
+        case .up:
+            return simd_quatf(angle: .pi / 2, axis: SIMD3<Float>(1, 0, 0))
         }
     }
     
     func addAnchorEntityToScene(anchor: ARAnchor) {
     
-        guard let anchorName = anchor.name, anchorName.starts(with: virtualObjectAnchorName) else {
-//            print("DEBUG: anchor.name is not == virtualObjectAnchorName")
-//            print("DEBUG: anchorName = \(anchor.name)")
+        guard let anchorName = anchor.name else {
+
             return
         }
         // save the reference to the virtual object anchor when the anchor is added from relocalizing
@@ -33,11 +36,21 @@ extension CustomARView {
             virtualObjectAnchor = anchor
         }
         
-//        virtualObject.modelEntity?.transform.rotation *= simd_quatf(angle: .pi * 0.5, axis: SIMD3<Float>(1,0,0))
+        if arState.targetPlacement {
+            print("DEBUG: inside targetPlacement")
+            let modelEntity = self.targetObject.modelEntity!
+//            let targetAnchor = try! Target.Scene.loadAnchor(named: "TemocTarget", in: Bundle.main)
+            let anchorEntity = AnchorEntity(anchor: anchor)
+            anchorEntity.addChild(modelEntity)
+            self.scene.addAnchor(anchorEntity)
+            
+//            self.scene.addAnchor(targetAnchor)
+            arState.targetPlacement = false
+            return
+        }
         
-//        var newVirtualObject = virtualObject.modelEntity?.clone(recursive: true)
         if let modelEntity = virtualObject.modelEntity?.clone(recursive: true) {
-//            modelEntity.transform.rotation
+            modelEntity.transform.rotation *= rotationMultiplier()
             print ("DEBUG: loadKeyIndex = \(self.loadKeyIndex)")
             print("DEBUG: numExperiences in ARView: \(self.numExperiences)")
 
