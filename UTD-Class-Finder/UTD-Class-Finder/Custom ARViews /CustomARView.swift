@@ -13,6 +13,9 @@ class CustomARView: ARView{
     // Referring to @EnvironmentObject
     var saveLoadState: SaveLoadState
     var arState: ARState
+    var doneSaving: Bool = false
+    var numExperiences: Int = -1 
+    
     
     var defaultConfiguration: ARWorldTrackingConfiguration {
         let configuration = ARWorldTrackingConfiguration()
@@ -26,6 +29,12 @@ class CustomARView: ARView{
     // MARK: - Init and setup
     
     init(frame frameRect: CGRect, saveLoadState: SaveLoadState, arState: ARState) {
+        self.numExperiences = UserDefaults.standard.integer(forKey: "numExperiences")
+        print("DEBUG: numExperiences = \(self.numExperiences)")
+//            self.numExperiences = numExp
+//        } else {
+//            self.numExperiences = -1
+//        }
         self.saveLoadState = saveLoadState
         self.arState = arState
         super.init(frame: frameRect)
@@ -49,8 +58,9 @@ class CustomARView: ARView{
     // MARK: - AR content
     var virtualObjectAnchor: ARAnchor?
     let virtualObjectAnchorName = "virtualObject"
-    var virtualObject = AssetModel(name: "teapot.usdz")
-    
+//    var virtualObject = AssetModel(name: "teapot.usdz")
+    var virtualObject = AssetModel(name: "arrow_3.usdz")
+    var targetObject = AssetModel(name: "target.usdz")
     
     // MARK: - AR session management
     var isRelocalizingMap = false
@@ -58,10 +68,17 @@ class CustomARView: ARView{
  
     // MARK: - Persistence: Saving and Loading
     let storedData = UserDefaults.standard
-    let mapKey = "ar.worldmap"
+    let mapKey = "ECSS"
+    var keyIdentifier: [String] = ["0", "1", "2", "3", "4"]
+    var saveKeyIndex: Int = 0
+    var loadKeyIndex: Int = 0
 
     lazy var worldMapData: Data? = {
-        storedData.data(forKey: mapKey)
+        var mapData = storedData.data(forKey: mapKey + "\(loadKeyIndex)")
+        print("DEBUG: worldMapData accessed")
+//        loadKeyIndex += 1
+        
+        return mapData
     }()
     
     func resetTracking() {

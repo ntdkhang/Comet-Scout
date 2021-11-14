@@ -30,6 +30,11 @@
 		425B999C274088D10008FD9A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B999A274088D00008FD9A /* Extensions.swift */; };
 		425B999D274088D10008FD9A /* SnapshotAnchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425B999B274088D10008FD9A /* SnapshotAnchor.swift */; };
 		425B999F274089530008FD9A /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 425B999E274089530008FD9A /* teapot.usdz */; };
+		428CE4B727410E750042EAE9 /* arrow.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 428CE4B627410E750042EAE9 /* arrow.usdz */; };
+		428CE4BB274148F10042EAE9 /* arrow_3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 428CE4BA274148F10042EAE9 /* arrow_3.usdz */; };
+		428CE4BF2741550D0042EAE9 /* Target.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 428CE4BE2741550D0042EAE9 /* Target.rcproject */; };
+		428CE4C327415A2E0042EAE9 /* target.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 428CE4C227415A2E0042EAE9 /* target.usdz */; };
+
 		891837882741607B0060C8C0 /* ClipApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891837872741607B0060C8C0 /* ClipApp.swift */; };
 		8918378A2741607B0060C8C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891837892741607B0060C8C0 /* ContentView.swift */; };
 		8918378C2741607B0060C8C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8918378B2741607B0060C8C0 /* Assets.xcassets */; };
@@ -86,6 +91,10 @@
 		425B999A274088D00008FD9A /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		425B999B274088D10008FD9A /* SnapshotAnchor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapshotAnchor.swift; sourceTree = "<group>"; };
 		425B999E274089530008FD9A /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		428CE4B627410E750042EAE9 /* arrow.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = arrow.usdz; sourceTree = "<group>"; };
+		428CE4BA274148F10042EAE9 /* arrow_3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = arrow_3.usdz; sourceTree = "<group>"; };
+		428CE4BE2741550D0042EAE9 /* Target.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Target.rcproject; sourceTree = "<group>"; };
+		428CE4C227415A2E0042EAE9 /* target.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = target.usdz; sourceTree = "<group>"; };
 		891837852741607B0060C8C0 /* Clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		891837872741607B0060C8C0 /* ClipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipApp.swift; sourceTree = "<group>"; };
 		891837892741607B0060C8C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,10 +148,14 @@
 				425B9974274086FF0008FD9A /* Models */,
 				425B9973274086F90008FD9A /* Views */,
 				425B9967274086000008FD9A /* Experience.rcproject */,
+				428CE4BE2741550D0042EAE9 /* Target.rcproject */,
 				425B999A274088D00008FD9A /* Extensions.swift */,
 				425B999B274088D10008FD9A /* SnapshotAnchor.swift */,
 				425B9969274086010008FD9A /* Assets.xcassets */,
+				428CE4BA274148F10042EAE9 /* arrow_3.usdz */,
+				428CE4B627410E750042EAE9 /* arrow.usdz */,
 				425B999E274089530008FD9A /* teapot.usdz */,
+				428CE4C227415A2E0042EAE9 /* target.usdz */,
 				425B996B274086010008FD9A /* Preview Content */,
 			);
 			path = "UTD-Class-Finder";
@@ -296,7 +309,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				425B999F274089530008FD9A /* teapot.usdz in Resources */,
+				428CE4BB274148F10042EAE9 /* arrow_3.usdz in Resources */,
 				425B996D274086010008FD9A /* Preview Assets.xcassets in Resources */,
+				428CE4B727410E750042EAE9 /* arrow.usdz in Resources */,
+				428CE4C327415A2E0042EAE9 /* target.usdz in Resources */,
 				425B996A274086010008FD9A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

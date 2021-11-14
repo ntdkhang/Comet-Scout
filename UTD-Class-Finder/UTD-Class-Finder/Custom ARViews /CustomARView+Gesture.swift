@@ -12,8 +12,8 @@ extension CustomARView {
 
     /// Add the tap gesture recogniser
     func setupGestures() {
-      let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-      self.addGestureRecognizer(tap)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        self.addGestureRecognizer(tap)
     }
 
     // MARK: - Placing AR Content
@@ -32,16 +32,19 @@ extension CustomARView {
         else { return }
 
         // Remove exisitng anchor and add new anchor
-        if let existingAnchor = virtualObjectAnchor {
-            self.session.remove(anchor: existingAnchor)
-        }
+//        if let existingAnchor = virtualObjectAnchor {
+//            self.session.remove(anchor: existingAnchor)
+//            print("DEBUG: Removed existing anchor")
+//        }
         virtualObjectAnchor = ARAnchor(
-            name: virtualObjectAnchorName,
+            name: virtualObjectAnchorName + "\(Int.random(in: 1...100))",
             transform: hitTestResult.worldTransform
         )
         
         // Add ARAnchor into ARView.session, which can be persisted in WorldMap
         self.session.add(anchor: virtualObjectAnchor!)
+        
+        
     }
 
 }
