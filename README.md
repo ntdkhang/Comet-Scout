@@ -1,4 +1,4 @@
-[My image](https://github.com/ntdkhang/Comet-Scout/blob/main/UTD-Class-Finder/UTD-Class-Finder/utdLogo.png)
+[Logo](https://github.com/ntdkhang/Comet-Scout/blob/main/UTD-Class-Finder/UTD-Class-Finder/utdLogo.png)
 
 # Comet Scout
 
