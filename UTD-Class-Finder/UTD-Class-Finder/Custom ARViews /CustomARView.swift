@@ -14,6 +14,7 @@ class CustomARView: ARView{
     var saveLoadState: SaveLoadState
     var arState: ARState
     
+    
     var defaultConfiguration: ARWorldTrackingConfiguration {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
@@ -58,10 +59,16 @@ class CustomARView: ARView{
  
     // MARK: - Persistence: Saving and Loading
     let storedData = UserDefaults.standard
-    let mapKey = "ar.worldmap"
+    let mapKey = "ECSS"
+    var keyIdentifier: [String] = ["0", "1", "2", "3", "4"]
+    var saveKeyIndex: Int = 0
+    var loadKeyIndex: Int = 0
 
     lazy var worldMapData: Data? = {
-        storedData.data(forKey: mapKey)
+        var mapData = storedData.data(forKey: mapKey + "\(loadKeyIndex)")
+        loadKeyIndex += 1
+        
+        return mapData
     }()
     
     func resetTracking() {

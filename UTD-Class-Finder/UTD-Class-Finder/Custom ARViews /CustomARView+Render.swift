@@ -21,7 +21,17 @@ extension CustomARView {
         }
         
         if let modelEntity = virtualObject.modelEntity {
-            print("DEBUG: adding model to scene - \(virtualObject.name)")
+            print ("DEBUG: loadKeyIndex = \(self.loadKeyIndex)")
+            
+            if (!self.saveLoadState.loadButton.isHidden){
+                self.loadExperience()
+                print("DEBUG: adding model to load scene - \(virtualObject.name)")
+
+            }
+            else{
+                print("DEBUG: adding model to save scene - \(virtualObject.name)")
+
+            }
             
             // Add modelEntity and anchorEntity into the scene for rendering
             let anchorEntity = AnchorEntity(anchor: anchor)

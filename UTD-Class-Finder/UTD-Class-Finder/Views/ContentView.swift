@@ -17,7 +17,7 @@ struct ContentView : View {
                 .edgesIgnoringSafeArea(.all)
 
             MainUI()
-            Text("HEY")
+            
         }
     }
 }

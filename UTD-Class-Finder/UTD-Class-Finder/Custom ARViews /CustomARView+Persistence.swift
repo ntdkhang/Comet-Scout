@@ -22,6 +22,7 @@ extension CustomARView {
             do {
                 guard let worldMap = try NSKeyedUnarchiver.unarchivedObject(ofClass: ARWorldMap.self, from: data)
                     else { fatalError("No ARWorldMap in archive.") }
+                print("DEBUG: Unarchived map data with key \(self.loadKeyIndex - 1)")
                 return worldMap
             } catch {
                 fatalError("Can't unarchive ARWorldMap from file data: \(error)")
@@ -61,7 +62,9 @@ extension CustomARView {
             
             do {
                 let data = try NSKeyedArchiver.archivedData(withRootObject: map, requiringSecureCoding: true)
-                self.storedData.set(data, forKey: self.mapKey)
+                self.storedData.set(data, forKey: self.mapKey + "\(self.saveKeyIndex)")
+                print("DEBUG: Archived map data with key \(self.saveKeyIndex)")
+                self.saveKeyIndex += 1
                 DispatchQueue.main.async {
                     self.saveLoadState.loadButton.isHidden = false
                     self.saveLoadState.loadButton.isEnabled = true

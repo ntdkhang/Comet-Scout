@@ -34,6 +34,7 @@ extension CustomARView {
         // Remove exisitng anchor and add new anchor
         if let existingAnchor = virtualObjectAnchor {
             self.session.remove(anchor: existingAnchor)
+            print("DEBUG: Removed existing anchor")
         }
         virtualObjectAnchor = ARAnchor(
             name: virtualObjectAnchorName,
@@ -42,6 +43,7 @@ extension CustomARView {
         
         // Add ARAnchor into ARView.session, which can be persisted in WorldMap
         self.session.add(anchor: virtualObjectAnchor!)
+        
     }
 
 }
