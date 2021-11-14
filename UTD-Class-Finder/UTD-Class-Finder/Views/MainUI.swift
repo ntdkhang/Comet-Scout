@@ -13,6 +13,7 @@ struct MainUI: View {
     
     var body: some View {
         VStack {
+            
             ZStack(alignment: .top) {
                 HStack {
                     if !arState.isThumbnailHidden {
@@ -32,6 +33,18 @@ struct MainUI: View {
                 }
                 
                 HStack {
+                    VStack {
+//                        Group {
+                            Text("load index: \(arState.loadIndex)")
+                            Text("save index: \(arState.saveIndex)")
+//                        }
+                        
+                    }
+                    .font(.system(size: 15))
+                    .padding(8)
+                    .cornerRadius(8)
+                    .background(Color.gray.opacity(0.4))
+                    
                     Spacer()
                     
                     Button(action: {
