@@ -50,8 +50,8 @@ struct HomeScreen: View {
                         Text("Select the building: ")
                         
                         Picker("Building Name", selection: $selectedBuildingIndex) {
-                            ForEach(0..<rooms.count, content: { index in
-                                Text(rooms[index])
+                            ForEach(0..<buildings.count, content: { index in
+                                Text(buildings[index])
                                 
                             })
                         }.onSubmit {
@@ -63,11 +63,27 @@ struct HomeScreen: View {
                         Text("Select the room: ")
                         
                         Picker("Room Number", selection: $selectedRoomIndex) {
-                            ForEach(0..<rooms.count, content: { index in
-                                Text(rooms[index])
+                            ForEach(0..<viewModel.rooms.count, content: { index in
+                                Text(viewModel.rooms[index])
                             })
                         }
                     }
+                    NavigationLink(destination: ContentView()){
+                        Text("Guide me!")
+                            .frame(minWidth: 0, maxWidth: 300)
+                            .padding()
+                            .foregroundColor(.orange)
+                            .font(.title)
+                    }
+                    //                    Button(action: {
+                    //                        let sharedUserDefaults = UserDefaults(suiteName: "com.ShoaibH")
+                    //                        if let data = sharedUserDefaults{
+                    //                            print(rooms[selectedIndex])
+                    //                            data.set(rooms[selectedIndex], forKey: "appClipData")
+                    //                        }
+                    //                        else{
+                    //                            print("App Failed to save data")
+                    //                        }
                 }
                 Spacer()
             }
