@@ -1,4 +1,4 @@
-![alt text](https://github.com/ntdkhang/Comet-Scout/tree/main/UTD-Class-Finder/UTD-Class-Finder/utdLogo.jpg?raw=true)
+[My image](https://github.com/ntdkhang/Comet-Scout/blob/main/UTD-Class-Finder/UTD-Class-Finder/utdLogo.png)
 
 # Comet Scout
 
