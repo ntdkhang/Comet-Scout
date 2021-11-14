@@ -14,5 +14,5 @@ We first have to understand how RealityKit maps the world and how we can save th
 Learning how to use complex functions in RealityKit, ARKit in a very short amount of time. Solving the issue of adding multiple anchors to the world map was a huge milestone for us.
 ## What we learned
 We learned the basics of RealityKit and ARKit, and we also learned how to collaborate as a team using gitHub.
-## What's next for UTD Class Finder
+## What's next for Comet Scout
 We will be expanding our data to cover more paths to classes in more buildings on our campus.
