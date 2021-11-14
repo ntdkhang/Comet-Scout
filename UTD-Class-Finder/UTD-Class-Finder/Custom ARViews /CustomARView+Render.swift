@@ -16,6 +16,8 @@ extension CustomARView {
         switch arState.arrowRotation {
         case .forward:
             return simd_quatf(angle: .ulpOfOne, axis: SIMD3<Float>(1, 0, 0))
+        case .backward:
+            return simd_quatf(angle: .pi, axis: SIMD3<Float>(1, 0, 0))
         case .left:
             return simd_quatf(angle: .pi / 2, axis: SIMD3<Float>(0, 1, 0))
         case .right:
@@ -54,13 +56,13 @@ extension CustomARView {
             print ("DEBUG: loadKeyIndex = \(self.loadKeyIndex)")
             print("DEBUG: numExperiences in ARView: \(self.numExperiences)")
 
-            if (self.doneSaving && self.loadKeyIndex < self.numExperiences){
-                self.loadExperience()
-                print("DEBUG: adding model to load scene - \(modelEntity.name)")
-            }
-            else{
-                print("DEBUG: adding model to save scene - \(modelEntity.name)")
-            }
+//            if (self.doneSaving && self.loadKeyIndex < self.numExperiences){
+//                self.loadExperience()
+//                print("DEBUG: adding model to load scene - \(modelEntity.name)")
+//            }
+//            else{
+//                print("DEBUG: adding model to save scene - \(modelEntity.name)")
+//            }
 
             // Add modelEntity and anchorEntity into the scene for rendering
             let anchorEntity = AnchorEntity(anchor: anchor)
