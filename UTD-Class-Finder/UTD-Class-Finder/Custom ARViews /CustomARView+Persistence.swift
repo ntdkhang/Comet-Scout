@@ -17,8 +17,9 @@ extension CustomARView {
         
         /// - Tag: ReadWorldMap
         let worldMap: ARWorldMap = {
-            guard let data = self.worldMapData
+            guard let data = UserDefaults.standard.data(forKey: self.mapKey + "\(self.loadKeyIndex)")
                 else { fatalError("Map data should already be verified to exist before Load button is enabled.") }
+            self.loadKeyIndex += 1
             do {
                 guard let worldMap = try NSKeyedUnarchiver.unarchivedObject(ofClass: ARWorldMap.self, from: data)
                     else { fatalError("No ARWorldMap in archive.") }

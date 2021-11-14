@@ -78,6 +78,8 @@ struct ARViewContainer: UIViewRepresentable {
         
         if arState.resetButton.isPressed {
             uiView.resetTracking()
+            uiView.doneSaving = true
+            uiView.numExperiences = uiView.saveKeyIndex
             
             DispatchQueue.main.async {
                 self.arState.resetButton.isPressed = false

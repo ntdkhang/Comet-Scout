@@ -13,6 +13,8 @@ class CustomARView: ARView{
     // Referring to @EnvironmentObject
     var saveLoadState: SaveLoadState
     var arState: ARState
+    var doneSaving: Bool = false
+    var numExperiences: Int = -1 
     
     
     var defaultConfiguration: ARWorldTrackingConfiguration {
@@ -66,7 +68,8 @@ class CustomARView: ARView{
 
     lazy var worldMapData: Data? = {
         var mapData = storedData.data(forKey: mapKey + "\(loadKeyIndex)")
-        loadKeyIndex += 1
+        print("DEBUG: worldMapData accessed")
+//        loadKeyIndex += 1
         
         return mapData
     }()

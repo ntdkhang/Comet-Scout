@@ -23,10 +23,9 @@ extension CustomARView {
         if let modelEntity = virtualObject.modelEntity {
             print ("DEBUG: loadKeyIndex = \(self.loadKeyIndex)")
             
-            if (!self.saveLoadState.loadButton.isHidden){
+            if (self.doneSaving && self.loadKeyIndex < self.numExperiences){
                 self.loadExperience()
                 print("DEBUG: adding model to load scene - \(virtualObject.name)")
-
             }
             else{
                 print("DEBUG: adding model to save scene - \(virtualObject.name)")
