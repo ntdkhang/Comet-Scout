@@ -13,6 +13,7 @@ class CustomARView: ARView{
     // Referring to @EnvironmentObject
     var saveLoadState: SaveLoadState
     var arState: ARState
+    
     var doneSaving: Bool = false
     var numExperiences: Int = -1 
     

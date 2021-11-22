@@ -11,14 +11,40 @@ import RealityKit
 import ARKit
 
 extension CustomARView {
+    func getMapSaveURL(for index: Int) -> URL {
+        do {
+            return try FileManager.default
+                .url(for: .documentDirectory,
+                     in: .userDomainMask,
+                     appropriateFor: nil,
+                     create: true)
+                .appendingPathComponent("map\(index).arexperience")
+        } catch {
+            fatalError("Can't get file save URL: \(error.localizedDescription)")
+        }
+    
+    }
+    
+    func getLoadingMapDataURL() -> URL {
+        return getMapSaveURL(for: self.loadKeyIndex)
+    }
+    
+    func getSavingMapDataURL() -> URL {
+        return getMapSaveURL(for: self.saveKeyIndex)
+    }
+    
     // MARK: - Persistence: Saving and Loading
     
+    var mapDataFromFile: Data? {
+        return try? Data(contentsOf: getLoadingMapDataURL())
+    }
+    
     func loadExperience() {
-        
-        /// - Tag: ReadWorldMap
+        // Read World Map
         let worldMap: ARWorldMap = {
-            guard let data = UserDefaults.standard.data(forKey: self.mapKey + "\(self.loadKeyIndex)")
+            guard let data = mapDataFromFile
                 else { fatalError("Map data should already be verified to exist before Load button is enabled.") }
+            
             self.loadKeyIndex += 1
             self.arState.loadIndex =  self.loadKeyIndex
             do {
@@ -30,6 +56,7 @@ extension CustomARView {
                 fatalError("Can't unarchive ARWorldMap from file data: \(error)")
             }
         }()
+        
         
         // Display the snapshot image stored in the world map to aid user in relocalizing.
         if let snapshotData = worldMap.snapshotAnchor?.imageData,
@@ -66,7 +93,7 @@ extension CustomARView {
             
             do {
                 let data = try NSKeyedArchiver.archivedData(withRootObject: map, requiringSecureCoding: true)
-                self.storedData.set(data, forKey: self.mapKey + "\(self.saveKeyIndex)")
+                try data.write(to: self.getSavingMapDataURL(), options: [.atomic])
                 print("DEBUG: Archived map data with key \(self.saveKeyIndex)")
                 self.saveKeyIndex += 1
                 self.arState.saveIndex = self.saveKeyIndex
@@ -77,6 +104,8 @@ extension CustomARView {
             } catch {
                 fatalError("Can't save map: \(error.localizedDescription)")
             }
+            
+            
         }
         self.session.run(self.defaultConfiguration, options: [.resetTracking, .removeExistingAnchors])
     }

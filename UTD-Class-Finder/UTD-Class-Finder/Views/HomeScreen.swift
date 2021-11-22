@@ -11,8 +11,8 @@ import SwiftUI
 
 struct HomeScreen: View {
     @ObservedObject var viewModel = ViewModel()
-    @State private var selectedRoomIndex = 0
-    @State private var selectedBuildingIndex = 0
+    @State var selectedRoomIndex = 0
+    @State var selectedBuildingIndex = 0
     //    @State private var rooms: [String]
     
     var buildings = ["ECSS", "ECSN", "ECSW", "ATEC", "JO"]
@@ -50,13 +50,13 @@ struct HomeScreen: View {
                         Text("Select the building: ")
                         
                         Picker("Building Name", selection: $selectedBuildingIndex) {
-                            ForEach(0..<buildings.count, content: { index in
-                                Text(buildings[index])
-                                
-                            })
-                        }.onSubmit {
-                            viewModel.ChangeBuilding(toIndex: selectedBuildingIndex)
+                            ForEach(0..<buildings.count, id: \.self) {
+                                Text(buildings[$0]).tag($0)
+                            }
                         }
+//                        .onReceive([self.selectedBuildingIndex].publisher.first()){
+//                            viewModel.ChangeBuilding(toIndex: selectedBuildingIndex)
+//                        }
                     }
                     
                     HStack{
