@@ -1,5 +1,8 @@
 [Logo](https://github.com/ntdkhang/Comet-Scout/blob/main/UTD-Class-Finder/UTD-Class-Finder/utdLogo.png)
 
+
+[![Demo](https://imgur.com/a/xYxz4UM)](https://www.youtube.com/watch?v=s0EOGTrWyEQ "Comet Scout Demo")
+
 # Comet Scout
 
 ## Inspiration
